@@ -1,0 +1,98 @@
+.current-user {
+    color: #FFFFFF;
+    background-color: rgba(0, 73, 102, 0.8);
+    border-radius: 0;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 0 10px 0 0;
+}
+
+.current-user1 {
+    color: #FFFFFF;
+    background-color: rgba(0, 73, 102, 0.8);
+    border-radius: 0;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.location {
+    color: #006E99;
+    background-color: #FFFFFF;
+    margin: 0 30px;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.location-h4 {    
+    font-weight: 700;
+}
+
+.container-current {
+    background-color: #006E99;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.message {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    text-align: center;
+    display: none;
+}
+
+.empty-error {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    text-align: center;
+}
+
+.message p, .empty-error p {
+    padding: 10px 0;
+}
+
+.weather-icon {
+    height: 128px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value p {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.temperature-value span {
+    font-size: 2rem;
+}
+
+.weather-description p {
+    text-transform: capitalize;
+}
+
+.next-five {
+    margin-top: 50px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Weather Zone</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/weather-app.css" rel="stylesheet">
+  <link href="css/multiple-locations.css" rel="stylesheet">
+  <link href="css/five-days-forecast.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/weather-app-logo.png" alt="Weather App Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="multiple-locations.html">Multiple Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="five-days.html">Five Days</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="forecast.html">Forecast</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="wrapper">
+
+    <!-- Enter Location for Forecast Weather -->
+    <div class="container">
+      <div class="row">
+        <div class="col weather-zone">
+          <h2>Discover <span class="zone">Forecast</span> Weather</h2><br>
+          <p class="lead">Enter the name of the city for which you want the forecast weather informations for next 
+          days (every 3 hours) (Weather, Description, Temperature, Pressure, Humidity, Min. Temperature, Max. 
+          Temperature, Wind Speed, Wind Direction).</p>
+          <p>Current date: <span id="date"></span> | Current time: <span id="time"></span></p> 
+        </div>
+        <div class="col current-user">
+          <form>
+            <div class="form-group row five-days1">
+              <h2><span class="zone">Next X Days</span> Forecast</h2>
+            </div>
+            <div class="form-group row">
+              <label class="col" for="enterCity">Enter City Name:</label>
+              <input type="text" class="form-control col" id="enterCity" aria-describedby="enterCityName">
+            </div>
+            <div class="form-group row">
+              <label class="col" for="enterDays">Enter Number:</label>
+              <input type="text" class="form-control col" id="enterDays" aria-describedby="enterNoOfDays">
+            </div>
+            <div class="empty-error"></div>         
+            <button type="submit" class="btn btn-primary" id="submitCity">Find Forecast Weather</button>
+          </form>       
+        </div>
+      </div>
+    </div>
+    <!-- Weather Forecast for 5 days -->
+    <div class="container forecast">
+      <div class="row head-forecast">
+        <div class="col">
+          <h2><span class="zone">Next X Days</span> Forecast</h2>
+        </div>
+        <div class="col city">
+          <h2>Location: <span class="city1"></span></h2>
+        </div>
+        <div class="col">
+          <div class="sunrise-sunset"><span class="sunrise"></span><span class="sunset"></span></div>
+        </div>
+      </div>
+      <div class="row forecast-weather-main">
+        <div id="forecast-weather"></div>
+      </div>      
+    </div>
+    <div class="push"></div>
+
+  </div>  
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <a rel="nofollow" href="http://www.zeforge.org" 
+        target="_blank">ZeForge Community</a> 2019 | ZeForge Academy Zenica | Project Weather App | Author: B. Mahmutović</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core and custom JavaScript -->  
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/date-time.js"></script>
+  <script src="js/forecast.js"></script>
+  <script src="js/time-conversion.js"></script>
+
+</body>
+</html>

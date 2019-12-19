@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Weather Zone</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/weather-app.css" rel="stylesheet">
+  <link href="css/multiple-locations.css" rel="stylesheet">
+  <link href="css/five-days-forecast.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/weather-app-logo.png" alt="Weather App Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="multiple-locations.html">Multiple Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="five-days.html">Five Days</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forecast.html">Forecast</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="wrapper">
+
+    <!-- Enter Location for Forecast Weather -->
+    <div class="container">
+      <div class="row">
+        <div class="col weather-zone1">
+          <h2>Our <span class="zone">Contact</span> Informations</h2>
+          <h2>We're here to help.</h2><br>
+          <div class="contact">
+            <span class="zone">WeatherZone </span>Ltd. Zenica<br>
+            Prve Zenicke brigade 1<br>
+            72000 Zenica<br>
+            Bosnia and Herzegovina<br>
+            Phone: +387 61 123 456<br>
+            E-mail: office@weatherzone.com<br>
+          </div>
+        </div>
+        <div class="col current-user1">
+          <form>
+            <div class="form-group row five-days1">
+              <h2><span class="zone">Contact</span> Us</h2>
+            </div>
+            <div class="form-group row">
+              <label class="col" for="enterCity">Name/Company:</label>
+              <input type="text" class="form-control col" id="enterCity" aria-describedby="enterCityName">
+            </div>
+            <div class="form-group row">
+              <label class="col" for="enterDays">E-mail:</label>
+              <input type="text" class="form-control col" id="enterDays" aria-describedby="enterNoOfDays">
+            </div>
+            <div class="form-group row">
+              <label class="col" for="enterMessage">Message:</label>
+              <textarea class="form-control col" id="enterMessage" rows="3"></textarea>
+            </div>
+            <div class="empty-error"></div>         
+            <button type="submit" class="btn btn-primary" id="submitCity">Send Your Message</button>
+          </form>       
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+
+  </div>  
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <a rel="nofollow" href="http://www.zeforge.org" 
+        target="_blank">ZeForge Community</a> 2019 | ZeForge Academy Zenica | Project Weather App | Author: B. Mahmutović</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core and custom JavaScript -->  
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

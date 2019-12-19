@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  padding-top: 36px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1rem;
+  background: url("../img/landscape.png") fixed center no-repeat;
+  background-size: cover;
+  background-color: #006E99;
+}
+/*
+body {
+  display: flex;
+  flex-direction: column;
+}
+*/
+.bg-dark {
+  background-color: #004966 !important;
+}
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
+  color: #FFFFFF;
+}
+
+.zone {
+  color: #4ACCFF;
+  padding: 0;
+}
+
+.py-5 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  font-size: 1rem;
+}
+
+.weather-zone {
+  color: #FFFFFF;
+  background-color: rgba(0, 73, 102, 0.8);
+  border-radius: 0;
+  padding: 40px 50px;
+  margin: 40px 0;
+  text-align: justify;
+  border-radius: 10px 0 0 0;
+}
+
+.weather-zone1 {
+  color: #FFFFFF;
+  background-color: rgba(0, 73, 102, 0.8);
+  border-radius: 0;
+  padding: 40px 50px;
+  margin: 40px 0;
+  text-align: justify;
+  border-radius: 10px 0 0 10px;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: #006E99;
+  text-decoration: none;
+}
+
+.owm {
+  color: #EB6E4B;
+}
+
+.owm:hover {
+  color: #FF8200;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #006E99;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #004966;
+}
+
+input[type=text],
+input[type=text]:focus,
+.form-control, 
+.form-control:active,
+.form-control:focus {
+  background-color: rgba(0, 73, 102, 0.5);
+  border: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-radius: 0;
+  text-align: left;
+  outline: none;
+}
+/*
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+*/
+.wrapper {
+  margin-bottom: 70px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.form-control:focus, 
+.btn-primary:focus, 
+.btn-primary:active,
+.btn-primary:active:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none !important;
+}

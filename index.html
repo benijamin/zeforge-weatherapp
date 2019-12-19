@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Weather Zone</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/weather-app.css" rel="stylesheet">
+  <link href="css/multiple-locations.css" rel="stylesheet">
+  <link href="css/five-days-forecast.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/weather-app-logo.png" alt="Weather App Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="multiple-locations.html">Multiple Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="five-days.html">Five Days</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forecast.html">Forecast</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="wrapper">
+
+    <!-- About application -->
+    <div class="container">
+      <div class="row">
+        <div class="col weather-zone1">
+          <h2>Weather <span class="zone">Zone</span></h2><br>
+          <p class="lead">Simple weather application that provides basic informations about the current weather 
+          for a user's location (Weather, Description, Temperature, Pressure, Humidity, Min. Temperature, Max. 
+          Temperature, Wind Speed, Wind Direction), then allows to search the current weather for any location 
+          in the world, as well as a weather forecast for a specific location and period.</p>
+          <p>There are also other basic information about the application and technologies used, as well 
+          about <a class="owm" rel="nofollow" href="https://openweathermap.org/" target="_blank">OpenWeatherMap API services</a>, 
+          including links.</p>
+          <p>Current date: <span id="date"></span> | Current time: <span id="time"></span></p>
+          <a href="multiple-locations.html" class="btn btn-primary">Discover Multiple Locations</a>
+        </div>
+        
+        <!-- Current weather for user's location -->
+        <div class="col current-user1">
+          <h2><span class="zone">Current</span> user's location</h2><br>
+          <div class="location">
+            <h4 class="location-h4">...</h4>
+          </div>
+          <div class="container-current">            
+            <div class="message"></div>          
+            <div class="weather-icon">
+              <img src="img/icons/unknown.png" alt="Unknown">
+            </div>
+            <div class="temperature-value">
+              <p>... °<span>C</span></p>
+            </div>
+            <div class="weather-description">
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <a rel="nofollow" href="http://www.zeforge.org" 
+        target="_blank">ZeForge Community</a> 2019 | ZeForge Academy Zenica | Project Weather App | Author: B. Mahmutović</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core and custom JavaScript -->  
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/date-time.js"></script>
+  <script src="js/current-user.js"></script>
+
+</body>
+</html>

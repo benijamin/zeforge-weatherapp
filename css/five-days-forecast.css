@@ -1,0 +1,69 @@
+.forecast {
+  color: #FFFFFF;
+  background-color: rgba(0, 73, 102, 0.8);
+  padding: 40px 10px;
+  margin-top: -30px;
+  margin-bottom: 90px;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-group {
+  padding: 0 30px;
+  text-align: left;
+}
+
+#submitCity {
+  float: right;
+  margin: 0 15px;
+}
+
+.table {
+  color: #FFFFFF;
+}
+
+.head-forecast, .forecast-weather-main {
+  padding: 0 40px 10px 40px;
+}
+
+#forecast-weather {
+  padding: 10px 15px;
+  overflow-x: auto;
+}
+ 
+#forecast-weather td {
+  width: 10%;
+  padding: 10px 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.blue {
+  background-color: rgba(0, 73, 102, 0.8);
+}
+
+thead.blue td {
+  padding: 10px 7px;
+
+}
+
+.light-blue {
+  background-color: rgba(0, 73, 102, 0.6);
+}
+
+.lighter-blue {
+  background-color: rgba(0, 73, 102, 0.4);
+}
+
+.city1 {
+  color: #4ACCFF;
+}
+
+.sunrise-sunset {
+  text-align: left;
+  padding-top: 12px;
+}
+
+.five-days1 {
+  padding: 10px 0 0 42px;
+}
